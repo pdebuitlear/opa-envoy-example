@@ -1,0 +1,18 @@
+{
+    "attributes": {
+        "request": {
+            "http": {
+                "headers": {
+                    ":method": "GET",
+                    ":path": "/productpage",
+                    "authorization": "Bearer eyJraWQiOiJOOTZuR1F4MWNxSFFCSi1JamtjcF8zSXZoYnpENzBlT0pSM1RLMEY3bmZNIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULjdMdHZaSUl5dVFsZ0NybW1CRW8wbnRxYjdSeDNGcjdtQkdXRUQtYTZ1YXMiLCJpc3MiOiJodHRwczovL2Rldi03ODkzMTAyNC5va3RhLmNvbS9vYXV0aDIvZGVmYXVsdCIsImF1ZCI6ImFwaTovL2RlZmF1bHQiLCJpYXQiOjE2Njk1ODM3ODQsImV4cCI6MTY2OTU4NzM4NCwiY2lkIjoiMG9hN2V4MWo4YnVGU0I3WnE1ZDciLCJzY3AiOlsib3BhIl0sInN1YiI6IjBvYTdleDFqOGJ1RlNCN1pxNWQ3In0.tiUGVWL1f3zGBfBuY3UIS0vZLD77T6A3Rb1ukRlSgS8ih1qaVr3SmtkaSzjkaLUWRIsG2atDmkAflhD-gyiDoBhz5t7QztGLKL6aVtKCilA5LYRLHuluydJKzus9oE11KeWfENm-8TzBuoFSeauU-zeqm_vu1UWj-xrJnA0xFFRwurtmXYIlNDO0hV3PL6oH_d0pERFbFAZ1fTQ6sCQhKkDPf8U0f-qTv-HdV_Jrn99MxhtpAP0V9iZ-y_EUSgsNlHuRzomoW0gAtqcaoYlEskGEfD240SZt6-CDYWr_ReHZTAM4YoY3HMjGOxTbAem-8uPNLh6MLaVx-qYGxzU9tw"
+                },
+                "method": "GET",
+                "path": "/productpage"
+            }
+        }
+    },
+    "parsed_path": [
+        "productpage"
+    ]
+}

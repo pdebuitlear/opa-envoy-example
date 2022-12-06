@@ -1,0 +1,30 @@
+{
+  "api": {
+    "/api/v1/users/*/profile": {
+      "GET": "profile.read",
+      "PUT": "profile.update"
+    },
+    "/api/v1/products": {
+      "GET": "products.read"
+    },
+    "/api/v1/products/*": {
+      "PUT": "products.update",
+      "POST": "products.update"
+    },
+    "/api/v1/customers/*": {
+      "GET": "customers.read",
+      "PUT": "customers.update",
+      "POST": "customers.create"
+    },
+    "/api/v1/customers/*/policies/*": {
+      "GET": "policies.read",
+      "PUT": "policies.update",
+      "POST": "policies.create"
+    }
+  },
+  "permissions": {
+    "agent": ["customers.read", "customers.update","customers.create","policy.read", "policy.update","policies.create","products.read","products.update"],
+    "marketing": ["products.read","products.update","products.create"],
+    "member": ["customers.read", "customers.update","policy.read", "policy.update","products.read"]
+  }
+}
