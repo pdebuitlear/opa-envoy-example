@@ -192,7 +192,10 @@ data:
       "op": "add",
       "path": "/spec/volumes/-",
       "value": opa_policy_volume,
-    }]
+    }, {
+      "op": "add",
+      "path": "/metadata/labels/opa-istio-injection",
+      "value": "enabled" }]
 
     opa_container = {
       "image": "openpolicyagent/opa:0.45.0-istio",
