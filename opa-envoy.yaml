@@ -7,6 +7,9 @@ metadata:
   name: ext-authz
   namespace: istio-system
 spec:
+  workloadSelector:
+    labels:
+      opa-istio-injection: enabled
   configPatches:
     - applyTo: HTTP_FILTER
       match:
