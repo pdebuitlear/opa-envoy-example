@@ -208,6 +208,7 @@ data:
         "--diagnostic-addr=0.0.0.0:8282",
         "/policies/policy.rego",
         "/policies/common.rego",
+        "/policies/data.json",
       ],
       "volumeMounts": [{
         "mountPath": "/config",
