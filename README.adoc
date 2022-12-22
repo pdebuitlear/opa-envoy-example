@@ -71,7 +71,7 @@ https://kubernetes.io/docs/reference/access-authn-authz/extensible-admission-con
 
 
 === Web hook/admission-controller
-The `+admission-controller+` deployment in the `+opa-istio+`namespace is only concerned with injecting the OPA sidecar container into the Pods that the have met the criteria defined in the MutatingWebhookConfiguration.
+The `+admission-controller+` deployment in the `+opa-istio+` namespace is only concerned with injecting the OPA sidecar container into the Pods that the have met the criteria defined in the MutatingWebhookConfiguration.
 The configuration of the injected container is determined by the `+inject.rego+` file which is mounted in the `+inject-policy+` ConfigMap.
 
 E.g.
