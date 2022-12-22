@@ -140,17 +140,12 @@ kubectl apply -k sample-application -n opa-test
 ----
 
 === Code walk-through
-In the namespace containing the pods to be secured by OPA, there are three files expected in a ConfigMap called `+opa-policy+` (see the configMapGenerator in opa-envoy-example\sample-application\kustomization.yaml) :
+In the namespace containing the pods to be secured by OPA, there are three files expected in a ConfigMap called `+opa-policy+` (see the configMapGenerator in opa-envoy-example\sample-application\kustomization.yaml). These three files contain the OPA policies to be applied to the services in the namespace.
 
-* `+policies/common.rego+`
-* `+policies/policy.rego+`
-* `+policies/data.json+`
+* `+policies/common.rego+` - contains JWT authentication logic, this logic can be configured to authenticate JWTs from multiple IDP Authorisation servers.
+* `+policies/policy.rego+` - uses the data from data.json to determine if the role in the JWT has 'permission' to call the requested resource.
+* `+policies/data.json+` -  is a static definition of the permissions (TODO: should be renamed to roles) and the resources that they are allowed invoke.
 
-These three files contain the OPA policies to be applied to the services in the namespace.
-
-`+common.rego+` contains JWT authentication logic, this logic can be configured to authenticate JWTs from multiple IDP Authorisation servers.
-`+policy.rego+` uses the data from data.json to determine if the role in the JWT has 'permission' to call the requested resource.
-`+policies/data.json+` is a static definition of the permissions (TODO: should be renamed to roles) and the resources that they are allowed invoke. 
 
 The logic in the `+policy.rego+` basically:
 
