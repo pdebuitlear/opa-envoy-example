@@ -140,7 +140,7 @@ kubectl apply -k sample-application -n opa-test
 ----
 
 === Code walk-through
-There are three files expected in a ConfigMap in the namespace containing the pods called `+opa-policy+` :
+In the namespace containing the pods to be secured by OPA, there are three files expected in a ConfigMap called `+opa-policy+` (see the configMapGenerator in opa-envoy-example\sample-application\kustomization.yaml) :
 
 * `+policies/common.rego+`
 * `+policies/policy.rego+`
