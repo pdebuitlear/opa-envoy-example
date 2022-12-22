@@ -30,13 +30,13 @@ allow {
 	some path
 	data.api[path]
 	glob.match(path, [], http_request.path)
-	print("path", path)
+	# print("path", path)
 	required_permission := data.api[path][http_request.method]
 
-	print("role", role)
-	print("data.roles", data.permissions)
-	print("permission", permission)
-	print("required_permission", required_permission)
+	# print("role", role)
+	# print("data.roles", data.permissions)
+	# print("permission", permission)
+	# print("required_permission", required_permission)
 
 	some p
 	permission[p] == required_permission
