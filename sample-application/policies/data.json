@@ -23,7 +23,7 @@
     }
   },
   "permissions": {
-    "agent": ["customers.read", "customers.update","customers.create","policy.read", "policy.update","policies.create","products.read","products.update"],
+    "comms": ["customers.read", "customers.update","customers.create","policy.read", "policy.update","policies.create","products.read","products.update"],
     "marketing": ["products.read","products.update","products.create"],
     "member": ["customers.read", "customers.update","policy.read", "policy.update","products.read"]
   }

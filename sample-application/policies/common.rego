@@ -3,7 +3,7 @@ package istio.authz.common
 import input.attributes.request.http as http_request
 
 
-issuers := {"https://dev-78931024.okta.com/oauth2/default", "https://login.microsoftonline.com/91dd274a-bb2a-4e3a-9a5f-09c4a2390aef/v2.0"}
+issuers := {"https://dev-78931024.okta.com/oauth2/default", "https://sts.windows.net/91dd274a-bb2a-4e3a-9a5f-09c4a2390aef/"}
 
 bearer_token := t {
 	[_, encoded] := split(http_request.headers.authorization, " ")
